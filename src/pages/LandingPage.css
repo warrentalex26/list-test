@@ -1,0 +1,40 @@
+.landing-container {
+  background: url('https://lafrikileria.com/blog/wp-content/uploads/2023/03/frases-star-wars.jpeg') no-repeat center center fixed; 
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landing-content {
+  text-align: center;
+}
+
+.landing-title {
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.landing-subtitle {
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 1px 1px 3px #000000;
+  margin-bottom: 20px;
+}
+
+.landing-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #FFD700;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.landing-button:hover {
+  background-color: #FFC700;
+}

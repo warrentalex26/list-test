@@ -1,0 +1,13 @@
+.starships-detail {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100vh;
+}
+
+.list-group-item {
+  border: none;
+  font-size: 1.2rem;
+  color: #f8f9fa !important;
+}

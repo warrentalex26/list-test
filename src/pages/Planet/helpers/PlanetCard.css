@@ -1,0 +1,27 @@
+.planet-card {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-bottom: 3rem;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.planet-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.vehicle-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .planet-card {
+    width: 100%;
+  }
+}
