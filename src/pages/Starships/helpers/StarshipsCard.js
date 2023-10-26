@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function StarshipsCard({ starships }) {
   return (
     <div className="starships-card">
-      <img src="/star-wars.png" alt={starships?.name} className="starships-image" />
+      <img src="star-wars.png" alt={starships?.name} className="starships-image" />
       <h3>{starships?.name}</h3>
       <p>
       Pasajeros: <span>{starships?.passengers}</span>

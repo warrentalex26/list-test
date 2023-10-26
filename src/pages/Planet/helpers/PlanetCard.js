@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function PlanetCard({ planet }) {
   return (
     <div className="planet-card">
-      <img src="/star-wars.png" alt={planet?.name} className="planet-image" />
+      <img src="star-wars.png" alt={planet?.name} className="planet-image" />
       <h3>{planet?.name}</h3>
       <ul>
         <li>
