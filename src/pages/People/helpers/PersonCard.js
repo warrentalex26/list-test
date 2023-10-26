@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function PersonCard({ person }) {
   return (
     <div className="person-card">
-      <img src="/star-wars.png" alt={person.name} className="person-image" />
+      <img src="star-wars.png" alt={person.name} className="person-image" />
       <h3>{person.name}</h3>
       <p>
         {/* <a href={person.homeworld}>Mundo Natal</a> */}
