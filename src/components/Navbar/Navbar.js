@@ -1,45 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse } from 'reactstrap';
 
-function Navbar(props) {
+function NavbarComponent(props) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark pl-3">
-      <Link className="navbar-brand" to="/">
-        StarWars
-      </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <Link className="nav-link" to="/people">
-              Personas
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/planets">
-              Planetas
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/starships/?page=1">
-              Naves
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar color="dark" dark expand="lg" className="pl-3">
+      <NavbarBrand tag={Link} to="/">StarWars</NavbarBrand>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink tag={Link} to="/people">Personas</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/planets">Planetas</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/starships/?page=1">Naves</NavLink>
+          </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default NavbarComponent;

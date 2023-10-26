@@ -29,7 +29,7 @@ function Planet() {
     <div>
       <Header />
       {loading ? (
-        <div className="d-flex justify-content-md-center align-items-center vh-100">
+        <div className="d-flex justify-content-md-center align-items-center vh-100 justify-content-center">
           <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e47aqz7zmpvbl61tsbl2roro6gxx4um1bjof4g6d0ll&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="loading" />
         </div>
       ) : (

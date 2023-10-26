@@ -14,7 +14,7 @@ function StarshipsDetails() {
     <div className="container-fluid bg-dark text-white">
       <Header />
       {loading ? (
-        <div className="d-flex justify-content-md-center align-items-center vh-100">
+        <div className="d-flex justify-content-md-center align-items-center vh-100 justify-content-center">
           <span className="sr-only">Loading...</span>
         </div>
       ) : (

@@ -4,7 +4,7 @@ import axios from "axios";
 function useSwapiData(endpoint, initialPage = 1) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState(initialPage);
+  const [currentPage, setCurrentPage] = useState(initialPage < 1 ? 1 : initialPage);
 
   useEffect(() => {
     const fetchData = async () => {
