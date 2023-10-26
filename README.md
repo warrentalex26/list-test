@@ -26,6 +26,8 @@ Esto va a crear la carpeta build con los archivos necesarios para subir el proye
 
 ### Que contiene el proyecto?
 
+NOTA: Algunas veces la API deja de funcionar asi que hay una carpeta mock que contiene un archivo json con la informacion para que el proyecto siga funcionando.
+
 El proyecto contiene una pagina principal con un buscador de peliculas, un menu con las categorias de peliculas y una pagina de detalle de pelicula.
 En la pagina principal puedes ver un fondo de pantalla que esta en el localhost:3000. El proyecto tiene un buscador que se adapta dependiendo en la
 seccion en la que te encuentres.
